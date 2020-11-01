@@ -15,6 +15,10 @@ node {
       	 //Output : Created packages in war file
    }
 	
-
+stage("Maven Build"){
+			steps{
+				sh "mvn clean package"			
+			}
+	      }
 }
 
